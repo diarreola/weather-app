@@ -8,6 +8,10 @@ body {
     color: hsl(200, 100%, 10%);
     font-family: sans-serif;
 }
+.blurred {
+    filter: blur(3px);
+    overflow: hidden;
+}
 
 .header {
     display: flex;
@@ -21,7 +25,7 @@ body {
     justify-content: center;
     margin: .5rem;
     padding: .5rem;
-    border-right: 2px solid hsl(200, 100%, 10%);;
+    border-right: 2px solid hsl(200, 100%, 10%);
 }
 
 .weather-icon {
@@ -47,4 +51,21 @@ body {
     gap: .5rem;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(2, auto);
+}
+.info-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.label {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: .6rem;
+    color: hsl(200, 100%, 20%);
+}
+
+.value-sub-info {
+    font-weight: lighter;
+    font-size: 0.75rem;
 }
